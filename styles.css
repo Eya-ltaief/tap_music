@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color:#F1ECC3
+}
+  
+body {
+    font-family:  'Poppins', sans-serif;
+}
+h2{
+    color: #ED8E7C;
+} 
+p{
+    color: #D54C4C;
+}
+.app {
+
+    align-items: center;
+}
+.app h2 , p{
+    margin-top:30px;
+    text-align: center
+}   
+.pads {
+    position: relative;
+    top: 84%;
+    width: 100% !important;
+    display: flex;
+   
+}
+.pads > div {
+    height: 100px;
+    width: 100px ;
+    flex: 1;
+}
+.pad1 {
+    background: blue;
+}
+.pad2 {
+    background: red;
+}
+.pad3 {
+    background: pink;
+}
+.pad4 {
+  background: yellowgreen;
+}
+.pad5 {
+    background: purple;
+}
+.pad6 {
+    background: green;
+}
+  
+.visual > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+}
+  
+@keyframes jump {
+    0% {
+      bottom: 0%;
+      left: 20%;
+    }
+    50% {
+      bottom: 50%;
+      left: 50%;
+    }
+  
+    100% {
+      bottom: 00%;
+      left: 80%;
+    }
+}
